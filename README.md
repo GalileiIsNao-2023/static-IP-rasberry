@@ -1,14 +1,14 @@
-# Static IP on Rasberry
-Abbiamo deciso di impostare un IP fisso sul Rasberry in modo da essere [trovato](https://github.com/GalileiIsNao-2023/NAO-Rasberry_python-socket) più facilmente dal NAO sulla rete.
+# Static IP on Raspberry
+Abbiamo deciso di impostare un IP fisso sul Raspberry in modo da essere [trovato](https://github.com/GalileiIsNao-2023/NAO-Raspberry_python-socket) più facilmente dal NAO sulla rete.
 
 ## Configurazione
-L'IP viene assegnato dal sistema operativo di Rasberry tramite il file `dhcpd.conf`. Prima di andare a modificare questo file ci serviranno le seguenti informazioni:
+L'IP viene assegnato dal sistema operativo di Raspberry tramite il file `dhcpd.conf`. Prima di andare a modificare questo file ci serviranno le seguenti informazioni:
 
 - **tipo di connessione**:
-    - **wlan0** → Rasberry è collegato al router via wireless
-    - **eth0** → Rasberry è collegato al router tramite cavo
+    - **wlan0** → Raspberry è collegato al router via wireless
+    - **eth0** → Raspberry è collegato al router tramite cavo
 
-- **l'indirizzo IP attualmente assegnato a Rasberry** → con il comando `hostname -I`
+- **l'indirizzo IP attualmente assegnato a Raspberry** → con il comando `hostname -I`
 
 - **l'indirizzo IP del gateway del router** → per trovarlo puoi utlizzare `ip r` o `grep default` (inidirizzo a sinistra)
 
@@ -38,7 +38,7 @@ static domain_name_servers=192.168.1.254
 ```
 
 ## Riavvio
-A questo punto possiamo riavviare il Rasberry:
+A questo punto possiamo riavviare il Raspberry:
 ```
 sudo reboot
 ```
