@@ -10,7 +10,7 @@ L'IP viene assegnato dal sistema operativo di Rasberry tramite il file `dhcpd.co
 
 - **l'indirizzo IP attualmente assegnato a Rasberry** → con il comando `hostname -I`
 
-- **l'indirizzo IP del gateway del router** → per trovarlo puoi utlizzare `ip r` o `grep default`
+- **l'indirizzo IP del gateway del router** → per trovarlo puoi utlizzare `ip r` o `grep default` (inidirizzo a sinistra)
 
 - **l'indirizzo IP DNS** → lo possiamo trovare all'interno di `resolv.conf` visualizzabile con il comando `sudo nano /etc/resolv.conf`. Annotare l'indirizzo di fianco alla voce nameserver premere quindi `Ctrl+X` per chiudere
 
